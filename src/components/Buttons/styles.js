@@ -2,6 +2,7 @@ import styled from "styled-components/native";
 
 const Container = styled.View`
 `;
+
 const Button = styled.TouchableOpacity`
     background-color: ${props => props.bgColor};
     padding: 10px;
@@ -10,7 +11,8 @@ const Button = styled.TouchableOpacity`
     border-radius: 20px;
     display:flex;
     align-items: center;
-    justify-content: center;`;
+    justify-content: center;
+`;
 
 const ButtonText = styled.Text`
     color:#fff;
