@@ -1,9 +1,15 @@
-import { View } from "react-native";
+import { Button, ButtonText, Container } from "./styles";
 
-export default function Buttons() {
+export default function Buttons({ onclic, color, txt }) {
     return (
-        <View>
 
-        </View>
+        <Button bgColor={color} onPress={onclic} activeOpacity={0.7} >
+            <Container >
+                <ButtonText>
+                    {txt}
+                </ButtonText>
+            </Container>
+        </Button>
+
     )
 }
